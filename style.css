@@ -257,7 +257,7 @@ footer .newsletter button:hover {
 /* Responsive styles */
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .stats .stat {
