@@ -1,0 +1,279 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    /* border-bottom: 1px solid #e0e0e0; */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header .cta button {
+    color: #ff52bf;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ff52bf;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    background: none;
+    cursor: pointer;
+}
+
+header .cta button:hover {
+    background-color: #ff52bf;
+    color: #ffffff;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin: 30px 0;
+}
+
+.hero .cta-button {
+    background-color: #ff52bf;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #ff2a96;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+/* Stats section styles */
+.stats {
+    /* background-color: #f0f0f0; */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.stats .stat {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.stats .stat h3 {
+    font-size: 48px;
+    margin: 0;
+    /* color: #ff52bf; */
+}
+
+.stats .stat p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Features section styles */
+.features {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.features .feature {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.features .feature img {
+    max-width: 40%;
+    height: auto;
+}
+
+.features .feature h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.features .feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Call-to-action section styles */
+.cta-section {
+    /* background-color: #f0f0f0; */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-section h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.cta-section .cta-button {
+    background-color: #ff52bf;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.cta-section .cta-button:hover {
+    background-color: #ff2a96;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+footer .footer-left h1 {
+    font-size: 24px;
+}
+
+footer .footer-left p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer .footer-left .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-left .contact-info li {
+    margin-bottom: 10px;
+}
+
+footer .footer-left .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer .footer-left .social-media li {
+    margin-right: 10px;
+}
+
+footer .newsletter {
+    flex: 1;
+}
+
+footer .newsletter h2 {
+    font-size: 18px;
+}
+
+footer .newsletter p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+footer .newsletter form {
+    display: flex;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff52bf;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .newsletter button:hover {
+    background-color: #ff2a96;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .stats .stat {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .features .feature {
+        margin-bottom: 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .footer-left, footer .newsletter {
+        margin-bottom: 20px;
+    }
+}
