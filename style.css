@@ -204,14 +204,18 @@ footer .footer-left .contact-info li {
 }
 
 footer .footer-left .social-media {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 
 footer .footer-left .social-media li {
-    margin-right: 20px;
+    margin-right: 50px;
+}
+
+footer .footer-right h2{
+    color: rgb(7, 10, 40);
 }
 
 footer .newsletter {
